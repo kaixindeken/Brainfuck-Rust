@@ -1,0 +1,21 @@
+[package]
+name = "brainfuck"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "interpreter"
+path = "src/main_interpreter.rs"
+
+[[bin]]
+name = "ir"
+path = "src/main_ir.rs"
+
+[[bin]]
+name = "jit"
+path = "src/main_jit.rs"
+
+[dependencies]
+dynasm = "1.2.1"
+dynasmrt = "1.2.1"
